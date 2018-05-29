@@ -10,7 +10,7 @@ services:
     build:
       context: .
     links:
-      - workspace
+      - workspace-phpfpm
     ports:
       - "${NGINX_HTTP_PORT}:80"
     volumes:
